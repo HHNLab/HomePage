@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/iconfont.css">
+    <link rel="shortcut icon" href="http://hhn-zblog.oss-accelerate.aliyuncs.com/aboutzblog/2022/09/20220909053450214.jpg">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/mdui@1.0.0/dist/css/mdui.min.css"
+    integrity="sha384-2PJ2u4NYg6jCNNpv3i1hK9AoAqODy6CdiC+gYiL2DVx+ku5wzJMFNdE3RoWfBIRP"
+    crossorigin="anonymous"
+  />
+  <script
+    src="https://cdn.jsdelivr.net/npm/mdui@1.0.0/dist/js/mdui.min.js"
+    integrity="sha384-aB8rnkAu/GBsQ1q6dwTySnlrrbhqDwrDnpVHR2Wgm8pWLbwUnzDcIROX3VvCbaK+"
+    crossorigin="anonymous"
+  ></script>
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://kit.fontawesome.com/bd2833b5cd.js" crossorigin="anonymous"></script>
+    <title>HHNLAB-HomePage</title>
+    <script>
+function runTime() {
+                    var d = new Date(), str = '';
+                    BirthDay = new Date("January 12,2023");
+                    today = new Date();
+                    timeold = (today.getTime() - BirthDay.getTime());
+                    sectimeold = timeold / 1000
+                    secondsold = Math.floor(sectimeold);
+                    msPerDay = 24 * 60 * 60 * 1000
+                    msPerYear = 365 * 24 * 60 * 60 * 1000
+                    e_daysold = timeold / msPerDay
+                    e_yearsold = timeold / msPerYear
+                    daysold = Math.floor(e_daysold);
+                    yearsold = Math.floor(e_yearsold);
+                    //str = yearsold + "年";
+                    str += daysold + "天";
+                    str += d.getHours() + '时';
+                    str += d.getMinutes() + '分';
+                    str += d.getSeconds() + '秒';
+                    return str;
+                }
+let a = 'background: #F8BBD0; color: #212121; border-radius: 3px 0 0 3px;'
+let b = 'background: #E91E63; color: #FFFFFF; border-radius: 0 3px 3px 0;'
+console.log(`%c小猫已经萌萌的存活了 %c`+runTime()+"喵！", a, b)
+console.log("LimeNeko：白白净净的猫猫可爱捏")
+    </script>
+</head>
+<body class="mdui-color-theme-pink mdui-text-color-theme-white mdui-theme-accent-white">
+    <div class="background"></div>
+    <main class="main_style">
+         <!-- 基础网格 -->
+        <div class="mdui-row">  
+           <!-- 响应式网格 -->
+            <div class="mdui-col-xs-12 mdui-col-md-2">
+                <div class="left-part">
+            <!-- 左部侧边栏 -->
+                    <div class="logo"><img src="http://hhn-zblog.oss-accelerate.aliyuncs.com/aboutzblog/2022/09/20220909053450214.jpg" alt="logo"></div>
+                    <div class="title">HHNLAB</div>
+                    <div class="subtitle">你所热爱的，就是你的生活</div>
+                </div>
+            </div>    
+          <div class="mdui-col-xs-12 mdui-col-md-10"  >
+            <!-- 中部大卡片 -->
+
+            
+            <div class="big-card" >
+              <div class="card-part">
+                <div class="mdui-typo title-text"><a href="#about">#</a> 关于</div>
+                <div class="main-text">很高兴能在这里遇见你，站点来自于中国大陆，既然你想了解更多，那你为什么不点击下方按钮试试看呢？<br \></div>
+                <a href="https://zblog.hhnlab.cn/aboutus" class="mdui-btn btn-style-blue"><div class="color_font_btn"><b>博客-关于我们</b></div></a>
+              </div>
+              <div class="card-part">
+                <div class="mdui-typo title-text"><a href="#type">#</a> 属性</div>
+                <div class="mdui-container">
+                  <div class="mdui-row">
+  
+                      <div class="mdui-col-xs-12 mdui-col-sm-6 mdui-col-md-4" mdui-tooltip="{content: '真的没人捏~'}">
+                              <div class="progress-title">团队人数</div>
+                          <div class="mdui-progress">
+                              <div class="mdui-progress-determinate" style="width: 1%;"></div>
+                          </div>
+                      </div>
+  
+                      <div class="mdui-col-xs-12 mdui-col-sm-6 mdui-col-md-4" mdui-tooltip="{content: '活在二次元，死在二次元~'}">
+                              <div class="progress-title">二次元浓度
+                          </div>
+                          <div class="mdui-progress">
+                              <div class="mdui-progress-determinate" style="width: 100%;"></div>
+                          </div>
+                      </div>
+                  </div>
+  
+                  <div class="mdui-row">
+                      <div class="mdui-col-xs-12 mdui-col-sm-6 mdui-col-md-4" mdui-tooltip="{content: '半罐水叮当响~面向的CP程序员'}">
+                              <div class="progress-title">技术能力</div>
+                          <div class="mdui-progress">
+                              <div class="mdui-progress-determinate" style="width: 24%;"></div>
+                            </div>
+                      
+                      </div>
+                  <div class="mdui-col-xs-12 mdui-col-sm-6 mdui-col-md-4" mdui-tooltip="{content: '某4姓女性南方网友:怎么不懒死你'}">
+                        <div class="progress-title">懒惰程度</div>
+                    <div class="mdui-progress">
+                        <div class="mdui-progress-determinate" style="width: 86%;"></div>
+                    </div>
+                </div>
+
+                          
+                    </div>
+                </div>
+
+                  
+
+              </div>
+
+              <div class="card-part">
+                <div class="mdui-typo title-text"><a href="#so_links">#</a> 社交圈</div>
+                  <a href="https://space.bilibili.com/393775057/" class="btn-style-pink mdui-btn mdui-btn-raised rin-btn rin-btn-black mdui-text-capitalize">
+                    <span class="iconfont icon-bilibili-line1 btn-bili-color"><b class="btn-style-color"> 团队B站主页</b> </span>
+                  </a>
+                <a href="https://space.bilibili.com/382228406" class="btn-style-pink mdui-btn mdui-btn-raised rin-btn rin-btn-black mdui-text-capitalize">
+                  <span class="iconfont icon-bilibili-line1 btn-bili-color"><b class="btn-style-color"> 个人B站主页</b></span>
+                </a>
+                <a href="https://github.com/fudujilm" class="btn-style-blue mdui-btn mdui-btn-raised rin-btn rin-btn-black mdui-text-capitalize">
+                  <span class="iconfont icon-github-fill"><b class="btn-style-color"> Github</b></span>
+                </a>
+                <a href="https://music.163.com/#/artist?id=52155972 " class="btn-style-pink mdui-btn mdui-btn-raised rin-btn rin-btn-black mdui-text-capitalize">
+                  <span class="iconfont icon-yinle btn-netmusic-color"><b class="btn-style-color"> 网易云音乐人</b></span>
+                </a>
+              </div>
+              <div class="card-part">
+                <div class="mdui-typo title-text">
+                  <a href="#ot_links">#</a> 其他链接</div>
+                <a href="zblog.hhnlab.cn" class="btn-style-pink mdui-btn mdui-btn-raised rin-btn rin-btn-black mdui-text-capitalize">
+                  <b class="btn-style-color">博客</b>
+                  </a>
+                  <a href="status.hhnlab.cn" class="btn-style-pink mdui-btn mdui-btn-raised rin-btn rin-btn-black mdui-text-capitalize">
+                    <b class="btn-style-color">站点状态</b>
+                  </a>
+              </div>
+              <div class="mdui-divider"></div>
+              <div class="card-part " id="footer">
+                  <div class="rin-card-content">© 2021-Present HHNLab and LimeNeko | Background Picture Creative By Personal AI <br> Support Email cheyennemix#163.com[#-->@] <br>Acknowledgement <a href="http://msdnicrosoft.cn/">MSDNicrosoft</a></div>
+
+
+              </div>
+            </div>
+              
+              </div>  
+              </div>
+            </div>
+
+                
+            </div>
+          </div>
+
+        </div>
+    </main>
+</body>
+</html>

@@ -1,0 +1,138 @@
+.main_style{
+    /*padding: 20px 25px;*/
+    padding: 20px 0;
+    height: auto;
+    display: flex;
+    width: 95%;
+    margin: auto;
+    /*height: 100vh;*/
+    /*max-width: 1200px;*/
+    /*max-width: 90%;*/
+    justify-content: center;
+    flex-flow: column nowrap;
+}
+.left-part{
+    padding: 20px;
+    margin: 15px;
+    backdrop-filter: blur(5px);
+    border-radius: 15px;
+    text-align: center;
+    background-color: rgba(250, 144, 152, .3);
+}
+.background{
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: -2;
+        position: fixed;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: 50% 50%;
+        background-image: url("../image/bg.png");
+}
+
+
+.title{
+    text-align: center;
+    font-size: 20px;
+    color: white;
+    margin-bottom: 8px;
+
+}
+.subtitle{
+    text-align: center;
+    font-size: 15px;
+    color: white;
+    margin-bottom: 8px;
+}
+.logo img{
+    border-radius:40px;
+    display: block;
+    margin: auto;
+    max-width: 220px;
+    padding-bottom: 10px;
+    width: 95%;
+}       
+.big-card{
+    margin: 14px;
+    backdrop-filter: blur(5px);
+    padding: 25px;
+    border-radius: 15px;
+    /*padding-bottom:0;*/
+    background-color: rgba(250, 144, 152, .3);
+}
+
+/* 自适应网页内容 */
+@media only screen and (min-width: 420px) and (max-width: 1024px) {
+    
+
+}
+@media only screen and (max-width: 1024px) {
+
+    .logo img{display: none;}
+    
+}
+.main-text{
+    color: white;
+    font-size: larger;
+}
+.title-text{
+    color: white;
+    font-size: large;
+}
+.btn-style-pink{
+    border-bottom: 1.5px solid #F9A2A8;
+}
+.btn-style-pink:hover{background-color: #F9A2A8;
+    transition: all .3s;}
+.btn-style-blue{
+    border-bottom: 1.5px solid #28A9E0;
+}
+.btn-style-blue:hover {
+    background-color: #28A9E0;
+    transition: all .3s;
+}
+.btn-style-white{
+    border-bottom: 1.5px solid white;
+}
+.btn-style-white:hover {
+    background-color: white;
+    color: black;
+    transition: all .3s;
+}
+.color_font_btn{
+    color: #4e85d6;}
+.card-part{
+    margin-bottom: 15px;
+    margin-top: 10px;
+}
+.footer{
+    text-align: center;
+}
+#footer div {
+    font-size: 12px;
+    text-align: center;
+    color: rgba(255,255,255,.79);
+}
+#footer a {
+    color: #2196f3;
+    font-weight: 700;
+    transition: all .3s;
+    text-decoration: none;
+}
+.progress-title {
+    color: white;
+    padding-bottom: 6px;
+    padding-top: 10px;
+}
+.btn-style-color{
+    color: beige;
+}
+.btn-bili-color{
+    color: #F8BBD0;
+}
+.btn-netmusic-color{
+    color: red;
+}
